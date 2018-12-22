@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main">
+    <LinearLayout
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:id="@+id/ic_phone"
+            android:layout_width="25sp"
+            android:layout_height="35sp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_phone"
+            android:contentDescription="@string/todo"/>
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:inputType="number"
+            android:hint="@string/phone_number"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_below="@id/input1">
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/ic_lock"
+            android:layout_width="25sp"
+            android:layout_height="35sp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_lock"
+            android:contentDescription="@string/todo"/>
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:inputType="textPassword"
+            android:hint="@string/please_enter_your_code"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_below="@id/input2"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register1"
+            android:gravity="center_horizontal"
+
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:gravity="center_horizontal"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -2,79 +2,61 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_main"
-    >
+    android:background="@mipmap/bg_main">
 
-
+    <ImageView
+        android:id="@+id/img_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/ic_icon"
+        android:contentDescription="@string/todo" />
     <LinearLayout
-        android:id="@+id/input1"
+        android:id="@+id/input4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp">
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageButton
+            android:id="@+id/btn_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_qq"
+            android:background=""
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/btn_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_wx"
+            android:background=""
+            android:contentDescription="@string/todo"
+            />
+        <ImageButton
+            android:id="@+id/btn_wy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_wy"
+            android:background=""
+            android:contentDescription="@string/todo"
+            />
+    </LinearLayout>
     <TextView
-        android:id="@+id/text1"
+        android:id="@+id/text3"
+        android:layout_below="@id/input4"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textSize="25sp"
-        android:textColor="#000000"
+        android:text="@string/text1"
+        android:textColor="#0188FB"
+        android:textSize="20sp"
         />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="14"
-        android:inputType="text"
-        android:hint="@string/name2"
-        />
-</LinearLayout>
-    <LinearLayout
-        android:id="@+id/input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_below="@id/input1">
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/code"
-            android:textSize="25sp"
-            android:textColor="#000000"
-            />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="14"
-            android:inputType="textPassword"
-            android:hint="@string/please_enter_your_code"
-            />
-</LinearLayout>
-    <LinearLayout
-        android:id="@+id/input3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="120dp"
-        android:layout_marginRight="120dp"
-        android:layout_below="@id/input2"
-        android:layout_centerHorizontal="true">
-        <Button
-            android:id="@+id/btn_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:gravity="center_horizontal"
-            />
-        <Button
-            android:id="@+id/btn_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cancel"
-            android:gravity="center_horizontal"/>
-</LinearLayout>
 </RelativeLayout>
